@@ -1,0 +1,83 @@
+/* Main content */
+.main-content {
+  padding: 7rem 8% 2rem;
+}
+.main-content .Welcome-content{
+  color: white;
+  display: flex;
+  gap: 12px;
+}
+.main-content .Welcome-content .user-icons{
+    display: flex;
+    align-items: center;
+}
+.main-content .Welcome-content div h1{
+  font-size: 1.8rem;
+}
+.main-content .Welcome-content .user a{
+  border-radius: 25px;
+    padding: 5px;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.user-icon {
+  font-size: 2rem;
+  color: black;
+}
+/* aqui van los estilos de las cards */
+.main-content .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.main-content .parent div .info{
+  display: block;
+  padding: 10px;
+  background-color: #1C3249;
+  border-radius: 10px 0 0 10px;
+  text-align: left;
+}
+.main-content .parent .div2 .info{
+  background-color: #2E3300;
+}
+.main-content .parent div .info .info-content h2{
+  font-size: 1.1rem;
+  color: white;
+}
+.main-content .parent div .info .info-content .user-icon{
+  border-radius: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  color: aliceblue;
+}
+.main-content .parent div .info .info-content .user-icon:hover{
+  background-color: #3D505B;
+}
+.main-content .parent div img{
+  width: 12vw;
+  border-radius:0 10px 10px 0;
+}
+.main-content .parent div{
+  display: flex;
+}
+@media (max-width: 1000px){
+  .main-content .parent{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    direction: ltr;
+    scrollbar-width: thin; /* For Firefox */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+     gap: 8px;
+  }
+  .main-content .parent div img{
+    width: 15vw;
+    
+  }
+}
+

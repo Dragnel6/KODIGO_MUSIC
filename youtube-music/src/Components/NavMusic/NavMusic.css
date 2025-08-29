@@ -1,0 +1,137 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+/* .nav-container{
+    background-color: #A83338;
+} */
+.nav-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    padding: 10px;
+}
+.nav-container nav .logo {
+    width: 80px;
+  
+}
+.nav-container nav .logo img{
+    width: 100%;
+  
+}
+/* Estilos del buscador ******/
+.nav-container nav .search{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    background-color: transparent; 
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+.nav-container nav .search .search-input {
+    border: none;
+    outline: none;
+    background-color: #3D505B; 
+    color: black;
+    font-size: 18px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px; 
+    color: white;
+}
+.nav-container nav .search .search-input:focus{
+    background-color: #030303;
+    color: white;
+}
+/* Estilos del contenedor del usuario */
+.nav-container .user-container .user-icons{
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+}
+.nav-container .user-container .user-icons:hover{
+    background-color: #3D505B;
+}
+.nav-container .user-container .user a{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.user-icon {
+  font-size: 2rem;
+  color: black;
+}
+
+
+/* Estilos del segundo nav  */
+.nav-container nav:nth-child(2) {
+    margin: 0;
+   justify-content: center;
+   white-space: nowrap;
+}
+.nav-container nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav-container nav ul li {
+    padding: 5px 7px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+.nav-container nav ul li a {
+    color: whitesmoke;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.nav-container nav ul li:hover {
+    background-color: #3D505B;
+}
+@media (max-width: 900px){
+    
+    .nav-container nav .search{
+       margin-right: 10px;
+        
+    }
+
+    .nav-container nav:nth-child(2) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        direction: ltr;
+        scrollbar-width: thin; /* For Firefox */
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    }
+    .nav-container nav ul {
+        display: flex;
+
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        min-width: max-content;
+    }
+    .nav-container nav ul li {
+        flex: 0 0 auto; /* Prevents the links from stretching */
+
+    }
+    .nav-container nav ul li a {
+      display: inline-block;
+      white-space: nowrap; /* Prevents text from wrapping */
+
+
+    }
+}

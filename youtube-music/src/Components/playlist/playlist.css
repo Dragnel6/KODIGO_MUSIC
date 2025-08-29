@@ -1,0 +1,88 @@
+section{
+  min-height: 60vh;
+  padding: 0rem 8% 2rem;
+}
+section .Welcome-content h1{
+    color: white;
+    font-size: 1.7rem;
+}
+
+section .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    direction: ltr;
+    scrollbar-width: thin; /* For Firefox */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+    
+section .parent .card-content{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+
+}
+section .parent .card-content div img{
+    width: 3vw;
+}
+
+section .parent .card-content div h3,
+section .parent .card-content div p{
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+section .parent .card-content div .info-content{
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    gap: 8px;
+}
+/* Estilos de la segunda playlisst */
+section .listForYou {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    direction: ltr;
+    scrollbar-width: thin; /* For Firefox */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+section .listForYou .card-content-list{
+    width: 100%;
+}
+section .listForYou .card-content-list .information img{
+    width: 15vw;
+    border-radius: 5px;
+}
+section .listForYou .card-content-list .information h2{
+    font-size: 1.1rem;
+}
+section .listForYou .card-content-list .information h3{
+    font-size: 1rem;
+}
+section .listForYou .card-content-list .information h2,
+section .listForYou .card-content-list .information h3{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        
